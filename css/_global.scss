@@ -1,0 +1,40 @@
+/* global styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-color: $bgColor;
+  padding-top: 50px;
+
+  @media (max-width: 500px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+header,
+section {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section {
+  @media (max-width: 370px) {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+p {
+  color: $parColor;
+}
+.title {
+  color: $headingColor;
+  font-weight: bold;
+}
+p.title {
+  font-size: 20px;
+  text-transform: capitalize;
+}

@@ -1,0 +1,32 @@
+/* styles for our buttons*/
+button {
+  border: none;
+  background: none;
+  outline: none;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px 0;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+.payment {
+  margin-top: 25px;
+  button {
+    background-color: $mainColor;
+    color: #fff;
+    box-shadow: 10px 10px 10px $bgColor;
+    &:hover {
+      background-color: rgba($mainColor, 0.8);
+    }
+  }
+}
+.cancel {
+  button {
+    color: $parColor;
+    &:hover {
+      color: $headingColor;
+    }
+  }
+}
